@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>
+	калькулятор витрати пального
+	</title>
+
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+ <section class="calculator">
+	<div class="calculator__item">
+		<div class="calculator__item-title ">
+			подолана дистанція
+		</div>
+		<input type="text" class="calculator__item-input covered-distance" oninput="calculateAverageConsumption(),showFuelForTravel(),showMoneyForTravel()">
+	</div>
+	<div class="calculator__item">
+		<div class="calculator__item-title ">
+			витрачене паливо
+		</div>
+		<input type="text" class="calculator__item-input fuel-consumed" oninput="calculateAverageConsumption (),showFuelForTravel(),showMoneyForTravel()">
+	</div>
+	<div class="calculator__item calculator__item--consumpition-per">
+		<div class="calculator__item-title ">
+			витрата на 100 км
+		</div>
+		<input type="text" class="calculator__item-input consumpition-per" >
+	</div>
+
+	<div class="calculator__item">
+		<div class="calculator__item-title ">
+			запланована дистанція
+		</div>
+		<input type="text" class="calculator__item-input planned-distance" oninput="showFuelForTravel(),showMoneyForTravel()">
+	</div>
+
+	
+	<div class="calculator__item">
+		<div class="calculator__item-title ">
+			ціна на паливо
+		</div>
+		<input type="text"  class="calculator__item-input fuel-price" oninput="showMoneyForTravel()">
+	</div>
+	<div class="calculator__item">
+		<div class="calculator__item-title ">
+			необхідна кількість палива
+		</div>
+		<input type="text" class="calculator__item-input required-fuel">
+	</div>
+	<div class="calculator__item">
+		<div class="calculator__item-title ">
+			необхідна кількість грошей
+		</div>
+		<input type="text" class="calculator__item-input amount-money">
+	</div>
+ </section>
+
+ 
+
+
+ 
+<script src="mainJs.js"></script>
+
+</body>
+
+</html>

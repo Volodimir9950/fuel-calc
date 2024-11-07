@@ -1,0 +1,79 @@
+
+html{
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+	box-sizing: inherit;
+}
+ul,
+ol{
+	padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd{
+	margin: 0;
+}
+ul[class] {
+	list-style: none;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+input,
+button,
+textarea,
+select{
+	font:inherit;
+}
+body{
+	min-height: 100vh;
+}
+a{
+	text-decoration: none;
+}
+.calculator{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    justify-content: space-around;
+    text-align: center;
+    border: solid 3px #fff730;
+    padding:10px ;
+    margin: auto;
+}
+.calculator__item{
+    font-size: 25px;
+    max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 7px;
+}
+.calculator__item-input{
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+}
+.calculator__item--consumpition-per{
+    color: red;
+    width: 120%;
+    max-width: none;
+ }
